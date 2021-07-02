@@ -1,0 +1,292 @@
+<DOCTYPE html>
+    <!--Proyecto de Jorge Roberto Hernando para "Programacion Web para
+        personas curiosas. Todo el codigo realizado fue basado en lo
+        visto en clase, además de tutoriales de internet con el fin de enriquecer un poco
+        mas la página"-->
+    <html>
+        <head>
+            <title> Roberto Hernando</title> 
+            <meta charset="UTF-8"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap" rel="stylesheet">
+            <link href="estilos.css" rel = "stylesheet">
+            <link href="estilos nav-bar.css" rel = "stylesheet">
+            <link href="estilos-slider.css" rel = "stylesheet">
+
+        </head>
+
+        <body>
+            <!--Menu de navegacion a diferentes secciones de la pagina-->
+             <nav class="nav-bar">
+                <a href="#">INICIO</a>
+                <a href="#estudios">ESTUDIOS</a>
+                <a href="#curso-extra">CURSO EXTRA</a>
+                <a href="#momentos">MOMENTOS</a>   
+                <a href="#contacto">CONTACTO</a>                            
+            </nav>                
+
+            <header>
+                <h1 id = "titulo-principal">PROGRAMACION WEB PARA PERSONAS CURIOSAS</h1>  
+                <h2>ROBERTO HERNANDO</h2>              
+            </header> 
+            
+            <!--Caja musical que adentro contiene un reproductor con una cancion-->
+            <div id = "music-box">
+                
+                <img id="nota-musical" src="Imagenes/Logos/nota-musical.png" >
+                <p>MUSIC BOX</p>
+                
+            </div>
+            
+            <!-- Insercion del archivo .mp3 de dicha caja-->
+            <audio  id="cancion-fondo" controls>
+                <source src ="Audios y videos/cancion-fondo.mp3" type="audio/mp3"> 
+            </audio>   
+
+            <!--Ajuste del volumen a 10%-->
+            <script>
+                var aud = document.getElementById("cancion-fondo");
+                aud.volume = 0.1;                    
+            </script>   
+            
+            <p id = "presentacion"> Hola! Mi nombre es Jorge Roberto Hernando, tengo 20 años y actualmente resido en Villa Mercedes, provincia de San Luis. <br>
+                Esta página es para el proyecto de "Programación Web para personas curiosas", en el que se han visto las bases para el desarrollo web <br>
+                codificado en html. A continuación, haré una breve descripción de los establecimientos a los que asistí para mi formación, desde la <br>
+                educación primaria, hasta la universidad donde estoy cursando actualmente.</p> 
+            
+
+            <div id="estudios">
+                <!--Div para ir a la seccion "estudios" de la pagina. Poniendolo de esta
+                forma (ariba del contenido y vacio) la barra de navegacion no tapa el título-->
+            </div>
+
+                <!-- Div con un diseño degradado de fondo-->
+                <div class = "fondo-degradado-1">
+                    
+                    <h2 class = "Titulos" style="margin-left: 10px;">Escuela N° 29 "Remedios Escalada de San Martin"</h2>
+                    
+                    <!-- Contenedor de un slider multimedia para cada establecimiento educativo -->
+                    <div class="contenedor-slider">
+                        
+                        <!--Lista de imagenes-->
+                        <ul class="slider">
+                            <li id="ere-slide1"> <img src="Imagenes/Remedios Escalada/Escuela Remedios Escalada.jpg"> </li>
+                            <li id="ere-slide2"> <img src="Imagenes/Remedios Escalada/egresados-ere.jpg"> </li>
+                            <li id="ere-slide3"> <img src="Imagenes/Remedios Escalada/bienvenida-ere.jpg"> </li>
+                            <li id="ere-slide4"> <img src="Imagenes/Remedios Escalada/presentacion-buzos-ere.jpg"> </li>    
+                        </ul>
+
+                        <!--Menu de navegacion de dichas imagenes-->
+                        <ul class="menu-slider">
+                        <li>
+                            <a href="#ere-slide1">1</a>
+                        </li>
+                        <li>
+                            <a href="#ere-slide2">2</a>
+                        </li>
+                        <li>
+                            <a href="#ere-slide3">3</a>
+                        </li>
+                        <li>
+                            <a href="#ere-slide4">4</a>
+                        </li>
+                        </ul>
+                        
+                    </div>
+
+                    <p class = "parrafos" style="font-size: 2vw;"> En este establecimiento realice mi educación primaria (desde segundo grado) y secundaria. <br>
+                        Me egresé en el año 2018 cursando el sexto año en la orientación Biológica. 
+                    </p>  
+
+                    <!--Boton que dirige a la pagina del establecimiento-->
+                    <form class="botones"action="https://www.facebook.com/P%C3%A1gina-Oficial-Escuela-N29-Remedios-Escalada-564897573653043"target="_blank">
+                        <button name = "ERE">IR AL SITIO WEB</button> 
+                    </form>  
+                
+                </div>
+
+                <!-- Div con un segundo diseño degradado de fondo-->
+                <div class = "fondo-degradado-2">
+
+                    <h2 class = "Titulos" style="text-align: right;margin-right: 20px;">Instituto Superior de Lengua Inglesa (I.S.L.I)</h2>
+
+                    <div class="contenedor-slider">
+                        
+                        <ul class="slider">
+                            <li id="isli-slide1"> <img src="Imagenes/ISLI/isli-logo.jpg"> </li>
+                            <li id="isli-slide2"> <img src="Imagenes/ISLI/isli.jpg"> </li>
+                            <li id="isli-slide3"> <img src="Imagenes/ISLI/isli-colacion.jpg"> </li>   
+                        </ul>
+                        
+                        <ul class="menu-slider">
+                        <li>
+                            <a href="#isli-slide1">1</a>
+                        </li>
+                        <li>
+                            <a href="#isli-slide2">2</a>
+                        </li>
+                        <li>
+                            <a href="#isli-slide3">3</a>
+                        </li>
+                        </ul>
+                        
+                    </div>
+
+                    <p class = "parrafos"style="font-size: 1.5vw;"> En este instituto estudié 6 años inglés, idioma que siempre me pareció interesante y a mis 13 años
+                        decidí empezar a estudiarlo. Este Instituto se ubicaba anteriormente en Avenida Mitre 617, y luego 
+                        se mudó a la esquina de San Martín y León Guillet. Finalicé mis estudios en 2018,
+                        al mismo tiempo que el secundario. Al finalizar, consideré la opción de estudiar 
+                        el profesorado, pero terminé eligiendo otra carrera.
+                        
+                    </p>
+                
+                    <form action="https://www.instagram.com/islivm/?hl=es-la"target="_blank">
+                        <button name = "ISLI">IR AL SITIO WEB</button> 
+                    </form>
+
+                </div>
+
+                
+                <div class = "fondo-degradado-1">
+                    <h2 class = "Titulos" style="margin-left: 10px;">Universidad Nacional de Villa Mercedes (UNViMe)</h2>
+
+                    <div class="contenedor-slider">
+                        
+                        <ul class="slider">
+                            <li id="unvime-slide1"> <img src="Imagenes/UNViMe/unvime-logo.jpg"> </li>
+                            <li id="unvime-slide2"> <img src="Imagenes/UNViMe/unvime.jpg"> </li>
+                            <li id="unvime-slide3"> <img src="Imagenes/UNViMe/unvime-eica.jpg"> </li>   
+                        </ul>
+                        
+                        <ul class="menu-slider">
+                        <li>
+                            <a href="#unvime-slide1">1</a>
+                        </li>
+                        <li>
+                            <a href="#unvime-slide2">2</a>
+                        </li>
+                        <li>
+                            <a href="#unvime-slide3">3</a>
+                        </li>
+                        </ul>
+                        
+                    </div> 
+
+                    <p class = "parrafos"style="font-size: 2vw;"> Universidad en la que me encuentro cursando actualmente. Estoy cursando 
+                        la carrera de Ingeniería en Sistemas de Información desde 2019, al año siguiente 
+                        de haber terminado el secundario. Mi interés por la tecnología hizo que haga el
+                        intento con la carrera.
+                    </p>
+
+                    <form action="https://www.unvime.edu.ar/"target="_blank">
+                        <button name = "UNVIME">IR AL SITIO WEB</button> 
+                    </form>
+                    
+                </div>                
+    
+            <div id="curso-extra"class = "fondo-degradado-2">
+                <h2 class = "Titulos" style="text-align: right;margin-right: 20px;"> (EXTRA) Curso de mitigación y desastre</h2>
+
+                <div class="contenedor-slider">
+                    
+                    <ul class="slider">
+                        <li id="dc-slide1"> <img src="Imagenes/Curso extra/dc-logo.jpg"> </li>
+                        <li id="dc-slide2"> <video id="stayin-alive-rcp" controls>
+                            <source src ="Audios y videos/stayin-alive-rcp.mp4" type="video/mp4">
+                        </video> </li> 
+                    </ul>
+                    
+                    <ul class="menu-slider">
+                      <li>
+                        <a href="#dc-slide1">1</a>
+                      </li>
+                      <li>
+                        <a href="#dc-slide2">2</a>
+                      </li>
+                    </ul>
+                    
+                </div>                 
+
+                <!--Volumen del video insertado wn 10%-->
+                <script>
+                    var vid = document.getElementById("stayin-alive-rcp");
+                    vid.volume = 0.1;                    
+                </script>  
+
+                <p class = "parrafos" style="font-size: 1.3vw;"> Además de lo anterior, también realicé un curso extra de mitigación
+                    y desastre dictado por Defensa Civil en la Municipalidad de Villa Mercedes en el año 2018. El curso
+                    consistió en 8 clases en las que se vieron temas tales como el uso de matafuegos y sus diferentes tipos,
+                    como tomar la presión, las maniobras de reanimación cardiopulmonar (RCP), etc. El video de la izquierda muestra las maniobras de RCP vistas en el curso, 
+                    siguiendo el ritmo de la canción "Stayin' alive."
+                </p>
+               
+                <form action="https://www.facebook.com/defensacivil.villamercedes"target="_blank">
+                    <button name = "DC" id="botones">IR AL SITIO WEB</button> 
+                </form>
+            </div> 
+            
+            <!--Slider con fotos de algunos momentos, cambiando algunos parámetros
+            respecto a los sliders anteriores tales como posicion,margenes,alineado 
+            de texto, etc-->
+
+            <div id = "momentos">
+                <h2 class = "Titulos" style="text-align: right;margin-right: 20px;text-align: center;font-size: 60;"> MOMENTOS</h2>
+                <div class="contenedor-slider" style="position: fixed;left:33%">
+                            
+                    <ul class="slider">
+                        <li id="momentos-1"> <img src="Imagenes/Momentos/bariloche.jpg">
+                        <p>2018. Viaje de egresados a Bariloche.</p> </li>
+
+                        <li id="momentos-2"> <img src="Imagenes/Momentos/recepcion-1.jpg">
+                        <p>2018. Mi familia y yo en la fiesta de recepción.</p></li>
+
+                        <li id="momentos-3"> <img src="Imagenes/Momentos/fiestas-2018.jpg"> 
+                        <p>2018. Cena de Navidad.</p></li>  
+
+                        <li id="momentos-4"> <img src="Imagenes/Momentos/bombonera.jpg"> 
+                        <p>2019. Partido de Boca Juniors vs Godoy Cruz. Primera y hasta ahora única vez que visité el estadio</p></li>  
+
+                        <li id="momentos-5"> <img src="Imagenes/Momentos/achiras.jpg"> 
+                        <p>2019. Vacaciones a Achiras.</p></li>
+
+                        <li id="momentos-6"> <img src="Imagenes/Momentos/kempes.jpg">
+                        <p>2018. Estadio Mario Alberto Kempes (Córdoba) en un viaje con la escuela de fútbol Albiazules de Villa Mercedes, escuela oficial del Club Atlético
+                            Talles de Córdoba.
+                        </p> </li>
+ 
+                    </ul>
+                    
+                    <ul class="menu-slider" style="margin-left:5%; padding-top: 45px;">
+                    <li>
+                        <a href="#momentos-1">1</a>
+                    </li>
+                    <li>
+                        <a href="#momentos-2">2</a>
+                    </li>
+                    <li>
+                        <a href="#momentos-3">3</a>
+                    </li>
+                    <li>
+                        <a href="#momentos-4">4</a>
+                    </li>
+                    <li>
+                        <a href="#momentos-5">5</a>
+                    </li>
+                    <li>
+                        <a href="#momentos-6">6</a>
+                    </li>
+                    </ul>    
+                </div> 
+            </div>
+        </body>
+
+        <!--Footer con mi nombre y datos de contacto-->
+        <footer>
+            <p id="contacto">JORGE ROBERTO HERNANDO <br> Correo electrónico: <a id="mail" href="mailto:robertohernando7@gmail.com"> robertohernando7@gmail.com</a><br>
+            REDES</p>
+            <a href="https://www.instagram.com/jrh_robert/?hl=es-la" target="_blank"><img class="logos-redes" src="Imagenes/Logos/instagram.png"></a>
+            <a href="https://www.facebook.com/roberto.hernando.3" target="_blank"><img class="logos-redes" src="Imagenes/Logos/facebook.png"></a>
+        </footer>
+
+    </html>

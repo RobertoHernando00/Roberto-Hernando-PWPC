@@ -1,0 +1,78 @@
+/*Diseño de los sliders y sus menúes*/
+.contenedor-slider{
+    width: 50rem;
+    height: 20%;
+    padding:10px;
+}
+  
+ul, li{
+    list-style: none;
+}
+ 
+ul.slider{
+    position: relative;
+    width: 70%;
+    height: auto;
+}
+  
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+ul.slider li img,video{
+    width: 25rem;
+    height: 18rem;
+    border-radius: 20px;
+    border: 10px double rgb(10, 10, 10);
+}
+
+ul.slider li p{
+    text-align: center;
+    font-size: 18;
+    margin-right: 0%;
+    height: 22px;
+    background-color: black;
+}
+ul.slider li:first-child {
+    opacity: 1;
+}
+  
+ul.slider li:target {
+    opacity: 1; 
+}
+
+.menu-slider{
+    text-align: left;
+    margin-left: 10%;
+    margin-top:40%;
+}
+  
+.menu-slider li{
+    display: inline-block;
+    text-align: center;
+}
+  
+.menu-slider li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    margin-top: 25px;
+}
+
+.menu-slider li a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
